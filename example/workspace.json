@@ -1,0 +1,949 @@
+{
+  "configuration" : {
+    "scope" : "SoftwareSystem"
+  },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-05-21T20:38:09Z",
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Analyst",
+      "properties" : {
+        "structurizr.dsl.identifier" : "analyst"
+      },
+      "relationships" : [ {
+        "description" : "Generates reports",
+        "destinationId" : "26",
+        "id" : "56",
+        "properties" : {
+          "structurizr.dsl.identifier" : "418e1eda-450d-4a68-86da-97424df277db"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Generates reports",
+        "destinationId" : "23",
+        "id" : "57",
+        "linkedRelationshipId" : "56",
+        "sourceId" : "1"
+      }, {
+        "description" : "Generates reports",
+        "destinationId" : "10",
+        "id" : "58",
+        "linkedRelationshipId" : "56",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Provider",
+      "properties" : {
+        "structurizr.dsl.identifier" : "provider"
+      },
+      "relationships" : [ {
+        "description" : "Supplies stock to be registered",
+        "destinationId" : "19",
+        "id" : "34",
+        "properties" : {
+          "structurizr.dsl.identifier" : "75e73365-1f75-4708-a0ca-5cd766dde0bb"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Supplies stock to be registered",
+        "destinationId" : "18",
+        "id" : "35",
+        "linkedRelationshipId" : "34",
+        "sourceId" : "2"
+      }, {
+        "description" : "Supplies stock to be registered",
+        "destinationId" : "10",
+        "id" : "36",
+        "linkedRelationshipId" : "34",
+        "sourceId" : "2"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Client",
+      "properties" : {
+        "structurizr.dsl.identifier" : "client"
+      },
+      "relationships" : [ {
+        "description" : "Creates delivery order",
+        "destinationId" : "19",
+        "id" : "60",
+        "properties" : {
+          "structurizr.dsl.identifier" : "88ba0bc1-5bb1-47ed-add1-f75a2a1f252b"
+        },
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Creates delivery order",
+        "destinationId" : "18",
+        "id" : "61",
+        "linkedRelationshipId" : "60",
+        "sourceId" : "3"
+      }, {
+        "description" : "Creates delivery order",
+        "destinationId" : "10",
+        "id" : "62",
+        "linkedRelationshipId" : "60",
+        "sourceId" : "3"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "Transport",
+      "properties" : {
+        "structurizr.dsl.identifier" : "transport"
+      },
+      "relationships" : [ {
+        "description" : "Gets the pending delivery orders",
+        "destinationId" : "12",
+        "id" : "67",
+        "properties" : {
+          "structurizr.dsl.identifier" : "320192d5-ae5a-474d-b831-ebeed86aae9d"
+        },
+        "sourceId" : "4",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Gets the pending delivery orders",
+        "destinationId" : "10",
+        "id" : "68",
+        "linkedRelationshipId" : "67",
+        "sourceId" : "4"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "id" : "5",
+      "location" : "Unspecified",
+      "name" : "Admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "admin"
+      },
+      "relationships" : [ {
+        "description" : "Enables system wide configurations",
+        "destinationId" : "10",
+        "id" : "71",
+        "properties" : {
+          "structurizr.dsl.identifier" : "56d05a83-beaf-4e36-a452-8cee77f6465e"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "description" : "Internal system used by the sales and purchase team to adquire new materials",
+      "documentation" : { },
+      "id" : "6",
+      "location" : "Unspecified",
+      "name" : "Sales Orders System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "buyer"
+      },
+      "relationships" : [ {
+        "description" : "Creates sales orders",
+        "destinationId" : "19",
+        "id" : "31",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e639dafb-57bb-45b4-9875-5e17453bfdb5"
+        },
+        "sourceId" : "6",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Creates sales orders",
+        "destinationId" : "18",
+        "id" : "32",
+        "linkedRelationshipId" : "31",
+        "sourceId" : "6"
+      }, {
+        "description" : "Creates sales orders",
+        "destinationId" : "10",
+        "id" : "33",
+        "linkedRelationshipId" : "31",
+        "sourceId" : "6"
+      } ],
+      "tags" : "Element,Software System,external"
+    }, {
+      "description" : "System provided by the providers to create purchase orders",
+      "documentation" : { },
+      "id" : "7",
+      "location" : "Unspecified",
+      "name" : "Provider's System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "order"
+      },
+      "tags" : "Element,Software System,external"
+    }, {
+      "description" : "External system to handle GeoLocation data",
+      "documentation" : { },
+      "id" : "8",
+      "location" : "Unspecified",
+      "name" : "Geolocation System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "map"
+      },
+      "tags" : "Element,Software System,external"
+    }, {
+      "description" : "System enabled to send notifications",
+      "documentation" : { },
+      "id" : "9",
+      "location" : "Unspecified",
+      "name" : "Notification System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "notification"
+      },
+      "tags" : "Element,Software System,external"
+    }, {
+      "containers" : [ {
+        "description" : "Web Application to manage inventory",
+        "documentation" : { },
+        "id" : "11",
+        "name" : "Web Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webapp"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "19",
+          "id" : "27",
+          "properties" : {
+            "structurizr.dsl.identifier" : "002d0326-4c0a-4750-8bb4-04f755355dad"
+          },
+          "sourceId" : "11",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "18",
+          "id" : "28",
+          "linkedRelationshipId" : "27",
+          "sourceId" : "11"
+        } ],
+        "tags" : "Element,Container,web",
+        "technology" : "JavaScript"
+      }, {
+        "description" : "Mobile Application to check routes and availability",
+        "documentation" : { },
+        "id" : "12",
+        "name" : "Mobile App",
+        "properties" : {
+          "structurizr.dsl.identifier" : "mobileapp"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "19",
+          "id" : "29",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bd06116d-ef61-414a-87c2-05cb48e8c970"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "18",
+          "id" : "30",
+          "linkedRelationshipId" : "29",
+          "sourceId" : "12"
+        }, {
+          "description" : "Creates a route to deliver",
+          "destinationId" : "8",
+          "id" : "69",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5807cbb1-8116-4d3c-9a01-5fac8877496b"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,mobile",
+        "technology" : "Hybrid Apps"
+      }, {
+        "description" : "Real world sensors the fetch info about the inventory",
+        "documentation" : { },
+        "id" : "13",
+        "name" : "IoT",
+        "properties" : {
+          "structurizr.dsl.identifier" : "sensors"
+        },
+        "relationships" : [ {
+          "description" : "Sends stock info events",
+          "destinationId" : "19",
+          "id" : "45",
+          "properties" : {
+            "structurizr.dsl.identifier" : "64089e5d-5c06-4a6c-b783-630945c82ccc"
+          },
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Sends stock info events",
+          "destinationId" : "18",
+          "id" : "46",
+          "linkedRelationshipId" : "45",
+          "sourceId" : "13"
+        } ],
+        "tags" : "Element,Container,sensor",
+        "technology" : "Amazon Kinesis"
+      }, {
+        "components" : [ {
+          "description" : "Database to store products and amounts",
+          "documentation" : { },
+          "id" : "15",
+          "name" : "Stock Database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "stockdatabase"
+          },
+          "tags" : "Element,Component,database",
+          "technology" : "Elasticsearch"
+        }, {
+          "description" : "Database to store purchase orders",
+          "documentation" : { },
+          "id" : "16",
+          "name" : "Order Database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "orderdatabase"
+          },
+          "tags" : "Element,Component,database",
+          "technology" : "SQL"
+        }, {
+          "description" : "Stores the deliveries that need to be done",
+          "documentation" : { },
+          "id" : "17",
+          "name" : "Delivery Database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "deliverydatabase"
+          },
+          "tags" : "Element,Component,database",
+          "technology" : "SQL"
+        } ],
+        "description" : "Set of databases to store the data",
+        "documentation" : { },
+        "id" : "14",
+        "name" : "Database System",
+        "properties" : {
+          "structurizr.dsl.identifier" : "databasesystem"
+        },
+        "tags" : "Element,Container,database"
+      }, {
+        "components" : [ {
+          "description" : "A simple application to allow accessing the info",
+          "documentation" : { },
+          "id" : "19",
+          "name" : "API",
+          "properties" : {
+            "structurizr.dsl.identifier" : "gateway"
+          },
+          "relationships" : [ {
+            "description" : "Stores the new order",
+            "destinationId" : "20",
+            "id" : "37",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9dee3081-ba2e-4dbd-9120-11004b44dd42"
+            },
+            "sourceId" : "19",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Updates the quantities",
+            "destinationId" : "21",
+            "id" : "47",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7c72bb6b-0ccd-40d9-8fe5-abf519b81a8c"
+            },
+            "sourceId" : "19",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Process all events",
+            "destinationId" : "24",
+            "id" : "51",
+            "properties" : {
+              "structurizr.dsl.identifier" : "89a8bd62-a866-4182-8c6b-fc05dec07a3a"
+            },
+            "sourceId" : "19",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Process all events",
+            "destinationId" : "23",
+            "id" : "52",
+            "linkedRelationshipId" : "51",
+            "sourceId" : "19"
+          }, {
+            "description" : "creates a new delivery order",
+            "destinationId" : "22",
+            "id" : "63",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7363d8a9-bcb7-4164-bd7b-d2603c9cbc59"
+            },
+            "sourceId" : "19",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component,API",
+          "technology" : "Kubernetes"
+        }, {
+          "description" : "MicroService to handle orders",
+          "documentation" : { },
+          "id" : "20",
+          "name" : "Orders Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ordersservice"
+          },
+          "relationships" : [ {
+            "description" : "Updates the stored orders",
+            "destinationId" : "16",
+            "id" : "38",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e5eec245-6644-4e2c-8156-529860fbca26"
+            },
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Updates the stored orders",
+            "destinationId" : "14",
+            "id" : "39",
+            "linkedRelationshipId" : "38",
+            "sourceId" : "20"
+          }, {
+            "description" : "Creates orders to restock products",
+            "destinationId" : "7",
+            "id" : "42",
+            "properties" : {
+              "structurizr.dsl.identifier" : "c55a239e-fcab-49a9-a2f8-cf5ed42b13e4"
+            },
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component,Microservice",
+          "technology" : "API"
+        }, {
+          "description" : "Microservice to handle stock qty",
+          "documentation" : { },
+          "id" : "21",
+          "name" : "Stock service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "stockservice"
+          },
+          "relationships" : [ {
+            "description" : "Persists the data",
+            "destinationId" : "15",
+            "id" : "48",
+            "properties" : {
+              "structurizr.dsl.identifier" : "540c6c1b-0001-4b2c-8635-d75dbb26c6f2"
+            },
+            "sourceId" : "21",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Persists the data",
+            "destinationId" : "14",
+            "id" : "49",
+            "linkedRelationshipId" : "48",
+            "sourceId" : "21"
+          } ],
+          "tags" : "Element,Component,Microservice",
+          "technology" : "API"
+        }, {
+          "description" : "Microservice to handle deliveries",
+          "documentation" : { },
+          "id" : "22",
+          "name" : "Delivery Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "deliveryservice"
+          },
+          "relationships" : [ {
+            "description" : "Stores the new delivery order",
+            "destinationId" : "17",
+            "id" : "64",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a4ccce65-fa49-4a12-b2d1-0bcf9c4a327e"
+            },
+            "sourceId" : "22",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Stores the new delivery order",
+            "destinationId" : "14",
+            "id" : "65",
+            "linkedRelationshipId" : "64",
+            "sourceId" : "22"
+          } ],
+          "tags" : "Element,Component,Microservice",
+          "technology" : "API"
+        } ],
+        "description" : "MicroService based application",
+        "documentation" : { },
+        "id" : "18",
+        "name" : "API application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "backend"
+        },
+        "relationships" : [ {
+          "description" : "Updates the stored orders",
+          "destinationId" : "16",
+          "id" : "40",
+          "linkedRelationshipId" : "38",
+          "sourceId" : "18"
+        }, {
+          "description" : "Updates the stored orders",
+          "destinationId" : "14",
+          "id" : "41",
+          "linkedRelationshipId" : "38",
+          "sourceId" : "18"
+        }, {
+          "description" : "Creates orders to restock products",
+          "destinationId" : "7",
+          "id" : "43",
+          "linkedRelationshipId" : "42",
+          "sourceId" : "18"
+        }, {
+          "description" : "Persists the data",
+          "destinationId" : "15",
+          "id" : "50",
+          "linkedRelationshipId" : "48",
+          "sourceId" : "18"
+        }, {
+          "description" : "Process all events",
+          "destinationId" : "24",
+          "id" : "53",
+          "linkedRelationshipId" : "51",
+          "sourceId" : "18"
+        }, {
+          "description" : "Process all events",
+          "destinationId" : "23",
+          "id" : "54",
+          "linkedRelationshipId" : "51",
+          "sourceId" : "18"
+        }, {
+          "description" : "Stores the new delivery order",
+          "destinationId" : "17",
+          "id" : "66",
+          "linkedRelationshipId" : "64",
+          "sourceId" : "18"
+        } ],
+        "tags" : "Element,Container,=,Microservice",
+        "technology" : "Kubernetes"
+      }, {
+        "components" : [ {
+          "description" : "A single point of entry to collect and parse data",
+          "documentation" : { },
+          "id" : "24",
+          "name" : "Data Aggregator",
+          "properties" : {
+            "structurizr.dsl.identifier" : "collector"
+          },
+          "relationships" : [ {
+            "description" : "Stores all historical data",
+            "destinationId" : "25",
+            "id" : "55",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ed041aed-2c8b-404e-b1d9-a746ee6733a7"
+            },
+            "sourceId" : "24",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Python"
+        }, {
+          "description" : "Stores non structured events",
+          "documentation" : { },
+          "id" : "25",
+          "name" : "Data Storage",
+          "properties" : {
+            "structurizr.dsl.identifier" : "collection"
+          },
+          "relationships" : [ {
+            "description" : "Uses historical data from",
+            "destinationId" : "26",
+            "id" : "59",
+            "properties" : {
+              "structurizr.dsl.identifier" : "09601cd3-21de-4483-a947-2846acd7ce2f"
+            },
+            "sourceId" : "25",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component,database",
+          "technology" : "ElasticSearch"
+        }, {
+          "description" : "Simple UI to visualize reports",
+          "documentation" : { },
+          "id" : "26",
+          "name" : "Data Visualization",
+          "properties" : {
+            "structurizr.dsl.identifier" : "terminal"
+          },
+          "tags" : "Element,Component,web",
+          "technology" : "Kibana"
+        } ],
+        "description" : "Consolidates system wide events into a report tool",
+        "documentation" : { },
+        "id" : "23",
+        "name" : "Report application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "reportstorage"
+        },
+        "tags" : "Element,Container",
+        "technology" : "ELK"
+      } ],
+      "description" : "Our system that handles all the inventory related information",
+      "documentation" : { },
+      "id" : "10",
+      "location" : "Unspecified",
+      "name" : "Inventory System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "inventorysystem"
+      },
+      "relationships" : [ {
+        "description" : "Creates orders to restock products",
+        "destinationId" : "7",
+        "id" : "44",
+        "linkedRelationshipId" : "42",
+        "sourceId" : "10"
+      }, {
+        "description" : "Creates a route to deliver",
+        "destinationId" : "8",
+        "id" : "70",
+        "linkedRelationshipId" : "69",
+        "sourceId" : "10"
+      } ],
+      "tags" : "Element,Software System,main"
+    } ]
+  },
+  "name" : "Inventory System",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJJbnZlbnRvcnkgU3lzdGVtInsKCiAgICBtb2RlbCB7CgogICAgICAgIC8vIFN0YWtlIGhvbGRlcnMKICAgICAgICBhbmFseXN0ID0gcGVyc29uICJBbmFseXN0IgogICAgICAgIHByb3ZpZGVyID0gcGVyc29uICAiUHJvdmlkZXIiCiAgICAgICAgY2xpZW50ID0gcGVyc29uICJDbGllbnQiCiAgICAgICAgdHJhbnNwb3J0ID0gcGVyc29uICJUcmFuc3BvcnQiCiAgICAgICAgYWRtaW4gPSBwZXJzb24gIkFkbWluIgoKICAgICAgICAvLyBFeHRlcm5hbCBTeXN0ZW1zCiAgICAgICAgYnV5ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiU2FsZXMgT3JkZXJzIFN5c3RlbSIgIkludGVybmFsIHN5c3RlbSB1c2VkIGJ5IHRoZSBzYWxlcyBhbmQgcHVyY2hhc2UgdGVhbSB0byBhZHF1aXJlIG5ldyBtYXRlcmlhbHMiICJleHRlcm5hbCIKICAgICAgICBvcmRlciA9IHNvZnR3YXJlU3lzdGVtICJQcm92aWRlcidzIFN5c3RlbSIgIlN5c3RlbSBwcm92aWRlZCBieSB0aGUgcHJvdmlkZXJzIHRvIGNyZWF0ZSBwdXJjaGFzZSBvcmRlcnMiICJleHRlcm5hbCIKICAgICAgICBtYXAgPSBzb2Z0d2FyZVN5c3RlbSAiR2VvbG9jYXRpb24gU3lzdGVtIiAiRXh0ZXJuYWwgc3lzdGVtIHRvIGhhbmRsZSBHZW9Mb2NhdGlvbiBkYXRhIiAiZXh0ZXJuYWwiCiAgICAgICAgbm90aWZpY2F0aW9uID0gc29mdHdhcmVTeXN0ZW0gIk5vdGlmaWNhdGlvbiBTeXN0ZW0iICJTeXN0ZW0gZW5hYmxlZCB0byBzZW5kIG5vdGlmaWNhdGlvbnMiICJleHRlcm5hbCIKCiAgICAgICAgaW52ZW50b3J5U3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIkludmVudG9yeSBTeXN0ZW0iIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk91ciBzeXN0ZW0gdGhhdCBoYW5kbGVzIGFsbCB0aGUgaW52ZW50b3J5IHJlbGF0ZWQgaW5mb3JtYXRpb24iCiAgICAgICAgICAgIHRhZ3MgIm1haW4iCgogICAgICAgICAgICB3ZWJBcHAgPSBjb250YWluZXIgIldlYiBBcHBsaWNhdGlvbiIgIldlYiBBcHBsaWNhdGlvbiB0byBtYW5hZ2UgaW52ZW50b3J5IiAiSmF2YVNjcmlwdCIgIndlYiIKICAgICAgICAgICAgbW9iaWxlQXBwID0gY29udGFpbmVyICJNb2JpbGUgQXBwIiAiTW9iaWxlIEFwcGxpY2F0aW9uIHRvIGNoZWNrIHJvdXRlcyBhbmQgYXZhaWxhYmlsaXR5IiAiSHlicmlkIEFwcHMiICJtb2JpbGUiCiAgICAgICAgICAgIAogICAgICAgICAgICBzZW5zb3JzID0gY29udGFpbmVyICJJb1QiICJSZWFsIHdvcmxkIHNlbnNvcnMgdGhlIGZldGNoIGluZm8gYWJvdXQgdGhlIGludmVudG9yeSIgIkFtYXpvbiBLaW5lc2lzIiAic2Vuc29yIgoKICAgICAgICAgICAgRGF0YWJhc2VTeXN0ZW0gPSBjb250YWluZXIgIkRhdGFiYXNlIFN5c3RlbSIgIlNldCBvZiBkYXRhYmFzZXMgdG8gc3RvcmUgdGhlIGRhdGEiIHsKICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIgoKICAgICAgICAgICAgICAgIHN0b2NrRGF0YWJhc2UgPSBjb21wb25lbnQgIlN0b2NrIERhdGFiYXNlIiAiRGF0YWJhc2UgdG8gc3RvcmUgcHJvZHVjdHMgYW5kIGFtb3VudHMiICJFbGFzdGljc2VhcmNoIiAiZGF0YWJhc2UiCiAgICAgICAgICAgICAgICBvcmRlckRhdGFiYXNlID0gY29tcG9uZW50ICJPcmRlciBEYXRhYmFzZSIgIkRhdGFiYXNlIHRvIHN0b3JlIHB1cmNoYXNlIG9yZGVycyIgIlNRTCIgImRhdGFiYXNlIgogICAgICAgICAgICAgICAgZGVsaXZlcnlEYXRhYmFzZSA9IGNvbXBvbmVudCAiRGVsaXZlcnkgRGF0YWJhc2UiICJTdG9yZXMgdGhlIGRlbGl2ZXJpZXMgdGhhdCBuZWVkIHRvIGJlIGRvbmUiICJTUUwiICJkYXRhYmFzZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgQmFja2VuZCA9IGNvbnRhaW5lciAiQVBJIGFwcGxpY2F0aW9uIiAiTWljcm9TZXJ2aWNlIGJhc2VkIGFwcGxpY2F0aW9uIiAiS3ViZXJuZXRlcyIgewogICAgICAgICAgICAgICAgdGFncyA9ICJNaWNyb3NlcnZpY2UiCiAgICAgICAgICAgICAgICBnYXRld2F5ID0gY29tcG9uZW50ICJBUEkiICJBIHNpbXBsZSBhcHBsaWNhdGlvbiB0byBhbGxvdyBhY2Nlc3NpbmcgdGhlIGluZm8iICJLdWJlcm5ldGVzIiAiQVBJIgoKICAgICAgICAgICAgICAgIG9yZGVyc1NlcnZpY2UgPSBjb21wb25lbnQgIk9yZGVycyBTZXJ2aWNlIiAiTWljcm9TZXJ2aWNlIHRvIGhhbmRsZSBvcmRlcnMiICJBUEkiICJNaWNyb3NlcnZpY2UiCiAgICAgICAgICAgICAgICBzdG9ja1NlcnZpY2UgPSBjb21wb25lbnQgIlN0b2NrIHNlcnZpY2UiICJNaWNyb3NlcnZpY2UgdG8gaGFuZGxlIHN0b2NrIHF0eSIgIkFQSSIgIk1pY3Jvc2VydmljZSIKICAgICAgICAgICAgICAgIGRlbGl2ZXJ5U2VydmljZSA9IGNvbXBvbmVudCAiRGVsaXZlcnkgU2VydmljZSIgIk1pY3Jvc2VydmljZSB0byBoYW5kbGUgZGVsaXZlcmllcyIgIkFQSSIgIk1pY3Jvc2VydmljZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgUmVwb3J0U3RvcmFnZSA9IGNvbnRhaW5lciAiUmVwb3J0IGFwcGxpY2F0aW9uIiAiQ29uc29saWRhdGVzIHN5c3RlbSB3aWRlIGV2ZW50cyBpbnRvIGEgcmVwb3J0IHRvb2wiICJFTEsiIHsKICAgICAgICAgICAgICAgIGNvbGxlY3RvciA9IGNvbXBvbmVudCAiRGF0YSBBZ2dyZWdhdG9yIiAiQSBzaW5nbGUgcG9pbnQgb2YgZW50cnkgdG8gY29sbGVjdCBhbmQgcGFyc2UgZGF0YSIgIlB5dGhvbiIKCiAgICAgICAgICAgICAgICBjb2xsZWN0aW9uID0gY29tcG9uZW50ICJEYXRhIFN0b3JhZ2UiICJTdG9yZXMgbm9uIHN0cnVjdHVyZWQgZXZlbnRzIiAiRWxhc3RpY1NlYXJjaCIgImRhdGFiYXNlIgoKICAgICAgICAgICAgICAgIHRlcm1pbmFsID0gY29tcG9uZW50ICJEYXRhIFZpc3VhbGl6YXRpb24iICJTaW1wbGUgVUkgdG8gdmlzdWFsaXplIHJlcG9ydHMiICJLaWJhbmEiICJ3ZWIiCiAgICAgICAgICAgIH0KICAgICAgICB9CgoKICAgICAgICAvLyBBZG1uaXN0cmF0aW9uCiAgICAgICAgd2ViQXBwIC0+IGdhdGV3YXkgIlVzZXMiCiAgICAgICAgbW9iaWxlQXBwIC0+IGdhdGV3YXkgIlVzZXMiCgogICAgICAgIC8vIE9yZGVyIG1hbmFnZW1lbnQKICAgICAgICBidXllciAtPiBnYXRld2F5ICJDcmVhdGVzIHNhbGVzIG9yZGVycyIKICAgICAgICBwcm92aWRlciAtPiBnYXRld2F5ICJTdXBwbGllcyBzdG9jayB0byBiZSByZWdpc3RlcmVkIgoKICAgICAgICBnYXRld2F5IC0+IG9yZGVyc1NlcnZpY2UgIlN0b3JlcyB0aGUgbmV3IG9yZGVyIgogICAgICAgIG9yZGVyc1NlcnZpY2UgLT4gb3JkZXJEYXRhYmFzZSAiVXBkYXRlcyB0aGUgc3RvcmVkIG9yZGVycyIKICAgICAgICBvcmRlcnNTZXJ2aWNlIC0+IG9yZGVyICJDcmVhdGVzIG9yZGVycyB0byByZXN0b2NrIHByb2R1Y3RzIgoKICAgICAgICAvLyBJb1QgaW50ZWdyYXRpb24KICAgICAgICBzZW5zb3JzIC0+IGdhdGV3YXkgIlNlbmRzIHN0b2NrIGluZm8gZXZlbnRzIgogICAgICAgIGdhdGV3YXkgLT4gc3RvY2tTZXJ2aWNlICJVcGRhdGVzIHRoZSBxdWFudGl0aWVzIgogICAgICAgIHN0b2NrU2VydmljZSAtPiBzdG9ja0RhdGFiYXNlICJQZXJzaXN0cyB0aGUgZGF0YSIKCiAgICAgICAgLy8gUmVwb3J0aW5nCiAgICAgICAgZ2F0ZXdheSAtPiBjb2xsZWN0b3IgIlByb2Nlc3MgYWxsIGV2ZW50cyIKICAgICAgICBjb2xsZWN0b3IgLT4gY29sbGVjdGlvbiAiU3RvcmVzIGFsbCBoaXN0b3JpY2FsIGRhdGEiCiAgICAgICAgYW5hbHlzdCAtPiB0ZXJtaW5hbCAiR2VuZXJhdGVzIHJlcG9ydHMiCiAgICAgICAgY29sbGVjdGlvbiAtPiB0ZXJtaW5hbCAiVXNlcyBoaXN0b3JpY2FsIGRhdGEgZnJvbSIKCiAgICAgICAgLy8gUm91dGVzIHBsYW5uaW5nCiAgICAgICAgY2xpZW50IC0+IGdhdGV3YXkgIkNyZWF0ZXMgZGVsaXZlcnkgb3JkZXIiCiAgICAgICAgZ2F0ZXdheSAtPiBkZWxpdmVyeVNlcnZpY2UgImNyZWF0ZXMgYSBuZXcgZGVsaXZlcnkgb3JkZXIiCiAgICAgICAgZGVsaXZlcnlTZXJ2aWNlIC0+IGRlbGl2ZXJ5RGF0YWJhc2UgIlN0b3JlcyB0aGUgbmV3IGRlbGl2ZXJ5IG9yZGVyIgogICAgICAgIHRyYW5zcG9ydCAtPiBtb2JpbGVBcHAgIkdldHMgdGhlIHBlbmRpbmcgZGVsaXZlcnkgb3JkZXJzIgogICAgICAgIG1vYmlsZUFwcCAtPiBtYXAgIkNyZWF0ZXMgYSByb3V0ZSB0byBkZWxpdmVyIgoKICAgICAgICAvLyBBZG1pbmlzdHJhdG9yCiAgICAgICAgYWRtaW4gLT4gaW52ZW50b3J5U3lzdGVtICJFbmFibGVzIHN5c3RlbSB3aWRlIGNvbmZpZ3VyYXRpb25zIgoKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBpbnZlbnRvcnlTeXN0ZW0gU2FsZXNDb250ZXh0ICJHZW5lcmFsIHZpZXcgb2YgaG93IHRoZSBzYWxlIHN5c3RlbSBpbnRlcmFjdHMgd2l0aCBleHRlcm5hbCBhY3RvcnMiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBCYWNrZW5kIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBSZXBvcnRTdG9yYWdlIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBEYXRhYmFzZVN5c3RlbSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJtYWluIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNFRUIwQjAKICAgICAgICAgICAgICAgIGJvcmRlciBzb2xpZAogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJleHRlcm5hbCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjOURENkZBCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjRUY4QzAwCiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAid2ViIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNhMWI1OTYKICAgICAgICAgICAgICAgIHNoYXBlIFdlYkJyb3dzZXIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAibW9iaWxlIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNhMWI1OTYKICAgICAgICAgICAgICAgIHNoYXBlIE1vYmlsZURldmljZUxhbmRzY2FwZQogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJkYXRhYmFzZSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjRENCQkQ4CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJzZW5zb3IiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0ZGRkZGMQogICAgICAgICAgICAgICAgc2hhcGUgUm9ib3QKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiQmFja2VuZCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjOEU4RDlGCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIk1pY3Jvc2VydmljZSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjQkFGRkVECiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgY29udGFpbmVyIHsKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGNvbmZpZ3VyYXRpb24gewogICAgICAgIHNjb3BlIHNvZnR3YXJlc3lzdGVtCiAgICB9Cgp9Cg=="
+  },
+  "views" : {
+    "componentViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "18",
+      "dimensions" : {
+        "height" : 4000,
+        "width" : 3100
+      },
+      "elements" : [ {
+        "id" : "2",
+        "x" : 225,
+        "y" : 200
+      }, {
+        "id" : "3",
+        "x" : 225,
+        "y" : 900
+      }, {
+        "id" : "6",
+        "x" : 200,
+        "y" : 1600
+      }, {
+        "id" : "7",
+        "x" : 2450,
+        "y" : 1000
+      }, {
+        "id" : "11",
+        "x" : 200,
+        "y" : 2200
+      }, {
+        "id" : "12",
+        "x" : 200,
+        "y" : 2800
+      }, {
+        "id" : "13",
+        "x" : 200,
+        "y" : 3400
+      }, {
+        "id" : "14",
+        "x" : 2450,
+        "y" : 1600
+      }, {
+        "id" : "19",
+        "x" : 950,
+        "y" : 1900
+      }, {
+        "id" : "20",
+        "x" : 1700,
+        "y" : 1000
+      }, {
+        "id" : "21",
+        "x" : 1700,
+        "y" : 2200
+      }, {
+        "id" : "22",
+        "x" : 1700,
+        "y" : 1600
+      }, {
+        "id" : "23",
+        "x" : 1700,
+        "y" : 2800
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-001",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "27"
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "34",
+        "vertices" : [ {
+          "x" : 650,
+          "y" : 750
+        } ]
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "39"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "45",
+        "vertices" : [ {
+          "x" : 650,
+          "y" : 3250
+        } ]
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "49"
+      }, {
+        "id" : "52"
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "65"
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "23",
+      "dimensions" : {
+        "height" : 2691,
+        "width" : 1570
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 1399
+      }, {
+        "id" : "18",
+        "x" : 899,
+        "y" : 199
+      }, {
+        "id" : "24",
+        "x" : 899,
+        "y" : 799
+      }, {
+        "id" : "25",
+        "x" : 899,
+        "y" : 1449
+      }, {
+        "id" : "26",
+        "x" : 899,
+        "y" : 2099
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-002",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "53"
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "56"
+      }, {
+        "id" : "59"
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "14",
+      "dimensions" : {
+        "height" : 1391,
+        "width" : 2390
+      },
+      "elements" : [ {
+        "id" : "15",
+        "x" : 1720,
+        "y" : 800
+      }, {
+        "id" : "16",
+        "x" : 970,
+        "y" : 800
+      }, {
+        "id" : "17",
+        "x" : 220,
+        "y" : 800
+      }, {
+        "id" : "18",
+        "x" : 970,
+        "y" : 200
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-003",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "40"
+      }, {
+        "id" : "50"
+      }, {
+        "id" : "66"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Component-001",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "background" : "#eeb0b0",
+          "border" : "Solid",
+          "tag" : "main"
+        }, {
+          "background" : "#9dd6fa",
+          "tag" : "external"
+        }, {
+          "background" : "#ef8c00",
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "background" : "#a1b596",
+          "shape" : "WebBrowser",
+          "tag" : "web"
+        }, {
+          "background" : "#a1b596",
+          "shape" : "MobileDeviceLandscape",
+          "tag" : "mobile"
+        }, {
+          "background" : "#dcbbd8",
+          "shape" : "Cylinder",
+          "tag" : "database"
+        }, {
+          "background" : "#fffff1",
+          "shape" : "Robot",
+          "tag" : "sensor"
+        }, {
+          "background" : "#8e8d9f",
+          "tag" : "Backend"
+        }, {
+          "background" : "#baffed",
+          "tag" : "Microservice"
+        }, {
+          "shape" : "Component",
+          "tag" : "container"
+        } ]
+      },
+      "terminology" : { }
+    },
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "General view of how the sale system interacts with external actors",
+      "dimensions" : {
+        "height" : 4200,
+        "width" : 2350
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 225,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 225,
+        "y" : 899
+      }, {
+        "id" : "3",
+        "x" : 225,
+        "y" : 1599
+      }, {
+        "id" : "4",
+        "x" : 225,
+        "y" : 2299
+      }, {
+        "id" : "5",
+        "x" : 225,
+        "y" : 2999
+      }, {
+        "id" : "6",
+        "x" : 200,
+        "y" : 3699
+      }, {
+        "id" : "7",
+        "x" : 1700,
+        "y" : 1699
+      }, {
+        "id" : "8",
+        "x" : 1700,
+        "y" : 2299
+      }, {
+        "id" : "10",
+        "x" : 950,
+        "y" : 1999
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "SalesContext",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "33",
+        "vertices" : [ {
+          "x" : 650,
+          "y" : 3549
+        } ]
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "58",
+        "vertices" : [ {
+          "x" : 650,
+          "y" : 749
+        } ]
+      }, {
+        "id" : "62"
+      }, {
+        "id" : "68"
+      }, {
+        "id" : "70"
+      }, {
+        "id" : "71"
+      } ],
+      "softwareSystemId" : "10"
+    } ]
+  }
+}

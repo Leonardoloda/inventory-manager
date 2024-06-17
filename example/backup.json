@@ -1,0 +1,366 @@
+{
+    "id": 87950,
+    "name": "Furniture Incorporated",
+    "description": "Context view to visualize the sales system for a furniture company",
+    "revision": 2,
+    "lastModifiedDate": "2023-11-18T15:46:50Z",
+    "lastModifiedUser": "ohhleonardo@gmail.com",
+    "lastModifiedAgent": "structurizr-cloud",
+    "properties": {
+        "structurizr.dsl": "d29ya3NwYWNlICJGdXJuaXR1cmUgSW5jb3Jwb3JhdGVkIiAiQ29udGV4dCB2aWV3IHRvIHZpc3VhbGl6ZSB0aGUgc2FsZXMgc3lzdGVtIGZvciBhIGZ1cm5pdHVyZSBjb21wYW55IiB7CgogICAgbW9kZWwgewogICAgICAgIGN1c3RvbWVyID0gcGVyc29uICJGdXJuaXR1cmUgQ3VzdG9tZXIiICJBIGN1c3RvbWVyIG9mIHRoZSBjb21wYW55IHdobyBidXlzIGEgcGllY2Ugb2YgZnVybml0dXJlIiAiQ3VzdG9tZXIiCiAgICAgICAgCiAgICAgICAgCiAgICAgICAgc3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIlNhbGVzIFN5c3RlbSIgIkludGVybmF0IHNhbGVzIHN5c3RlbSB0byBjcmVhdGUgb3JkZXJzIiAiU2FsZXMiIHsKICAgICAgICAgICAgd2ViYXBwID0gY29udGFpbmVyICJEZXNjcmlwdGlvbiIgewogICAgICAgICAgICAgICAgY3VzdG9tZXIgLT4gdGhpcyAiQ3JlYXRlcyBhIHB1cmNoYXNlIG9yZGVyIiAiU2FsZXMgU3lzdGVtIgogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBiYWNrZW5kID0gY29udGFpbmVyICJCYWNrIGVuZCIgIkludGVybmFsIHZpZXcgb2YgdGhlIHNlcnZlciBhcHBsaWNhdGlvbiIgewogICAgICAgICAgICAgICAgZGF0YWJhc2VDb25uZWN0b3IgPSBjb21wb25lbnQgIkRhdGFiYXNlIENvbm5lY3RvciIgIkFkbWluaXN0ZXIgdGhlIGNvbm5lY3Rpb24gdG8gdGhlIGRhdGFiYXNlIGFuZCBleGVjdXRpb3MgcXVlcmllcyIKICAgICAgICAgICAgICAgIHJvdXRlSGFuZGxlciA9IGNvbXBvbmVudCAiUm91dGVzIEhhbmRsZXIiICJDcmVhdGVzIGFsbCB0aGUgUkVTVCByb3V0ZXMgdG8gaGF2ZSBhIENSVUQgb3BlcmF0aW9ucyIKICAgICAgICAgICAgICAgIHB1cmNoYXNlQ29udHJvbGxlciA9IGNvbXBvbmVudCAiU2FsZXMgQ29udHJvbGxlciIgImhhbmRsZXMgYWxsIHRoZSBuZWNlc3NhcnkgYnVzaW5lc3MgbG9naWMgdG8gYmUgYWJsZSB0byBjcmVhdGUgYSBzYWxlIgogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIHJvdXRlSGFuZGxlciAtPiBwdXJjaGFzZUNvbnRyb2xsZXIgIkludm9rZXMgdGhlIG9wZXJhdGlvbnMiCiAgICAgICAgICAgICAgICBwdXJjaGFzZUNvbnRyb2xsZXIgLT4gZGF0YWJhc2VDb25uZWN0b3IgIlVzZXMgdGhlIGRhdGFiYXNlIGNvbm5lY3Rpb24gdG8gY3JlYXRlIG9yZGVycyIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICBjbGllbnQgPSBzb2Z0d2FyZVN5c3RlbSAiV2ViIEFwcCIgIldlYiBicm93c2VyIGFwcGxpY2F0aW9uIHdoZXJlIHByb2R1Y3RzIGFyZSBsaXN0ZWQiICJXZWIgQnJvd3NlciIKICAgICAgICBzZXJ2ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiQmFja2VuZCIgIlNlcnZlciBhcHBsaWNhdGlvbiB0aGF0IGNyZWF0ZSBwdXJjaGFzZSBvcmRlcnMiICJTZXJ2ZXIiCiAgICAgICAgZGF0YWJhc2UgPSBzb2Z0d2FyZVN5c3RlbSAiRGF0YWJhc2UiICJEYXRhYmFzZSBzeXN0ZW0gdG8ga2VlcCBhIHJlY29yZCBvZiBwdXJjaGFzZSBvcmRlcnMiICJEYXRhYmFzZSIKICAgICAgICAKICAgICAgICBjbGllbnQgLT4gc2VydmVyICJIVFRQIHJlcXVlc3QgdG8gY3JlYXRlIGEgcHVyY2hhc2Ugb3JkZXIiCiAgICAgICAgc2VydmVyIC0+IGRhdGFiYXNlICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgCgogICAgICAgIAogICAgICAgIAogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICAKICAgICAgICAKICAgICAgICBzeXN0ZW1Db250ZXh0IHN5c3RlbSBTYWxlc0NvbnRleHQgIkdlbmVyYWwgdmlldyBvZiBob3cgdGhlIHNhbGUgc3lzdGVtIGludGVyYWN0cyB3aXRoIGV4dGVybmFsIGFjdG9ycyIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgY29udGFpbmVyIHN5c3RlbSBjb250YWluZXIgewogICAgICAgICAgICBpbmNsdWRlIGNsaWVudCBzZXJ2ZXIgZGF0YWJhc2UKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgY29tcG9uZW50IGJhY2tlbmQgIkJhY2tlbmQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgICAgIGZvbnRTaXplIDIyCiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDdXN0b21lciIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDg0MjdiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJFeGlzdGluZyBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkNvbnRhaW5lciIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNDM4ZGQ1CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiV2ViIEJyb3dzZXIiIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYkJyb3dzZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJNb2JpbGUgQXBwIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBNb2JpbGVEZXZpY2VMYW5kc2NhcGUKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzg1YmJmMAogICAgICAgICAgICAgICAgY29sb3IgIzAwMDAwMAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkZhaWxvdmVyIiB7CiAgICAgICAgICAgICAgICBvcGFjaXR5IDI1CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0="
+    },
+    "model": {
+        "people": [
+            {
+                "id": "1",
+                "tags": "Element,Person,Customer",
+                "properties": {
+                    "structurizr.dsl.identifier": "customer"
+                },
+                "name": "Furniture Customer",
+                "description": "A customer of the company who buys a piece of furniture",
+                "relationships": [
+                    {
+                        "id": "4",
+                        "tags": "Relationship",
+                        "properties": {
+                            "structurizr.dsl.identifier": "79fcc800-ab82-4115-9b70-f86e03eef453"
+                        },
+                        "sourceId": "1",
+                        "destinationId": "3",
+                        "description": "Creates a purchase order",
+                        "technology": "Sales System"
+                    },
+                    {
+                        "id": "5",
+                        "sourceId": "1",
+                        "destinationId": "2",
+                        "description": "Creates a purchase order",
+                        "technology": "Sales System",
+                        "linkedRelationshipId": "4"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "14",
+                "tags": "Element,Software System,Database",
+                "properties": {
+                    "structurizr.dsl.identifier": "database"
+                },
+                "name": "Database",
+                "description": "Database system to keep a record of purchase orders",
+                "location": "Unspecified",
+                "documentation": {}
+            },
+            {
+                "id": "12",
+                "tags": "Element,Software System,Web Browser",
+                "properties": {
+                    "structurizr.dsl.identifier": "client"
+                },
+                "name": "Web App",
+                "description": "Web browser application where products are listed",
+                "relationships": [
+                    {
+                        "id": "15",
+                        "tags": "Relationship",
+                        "properties": {
+                            "structurizr.dsl.identifier": "b0add415-743e-4e95-8cff-e43d54ded487"
+                        },
+                        "sourceId": "12",
+                        "destinationId": "13",
+                        "description": "HTTP request to create a purchase order"
+                    }
+                ],
+                "location": "Unspecified",
+                "documentation": {}
+            },
+            {
+                "id": "13",
+                "tags": "Element,Software System,Server",
+                "properties": {
+                    "structurizr.dsl.identifier": "server"
+                },
+                "name": "Backend",
+                "description": "Server application that create purchase orders",
+                "relationships": [
+                    {
+                        "id": "16",
+                        "tags": "Relationship",
+                        "properties": {
+                            "structurizr.dsl.identifier": "3a9eb5c9-c36e-4f62-b7f7-27e9649d031d"
+                        },
+                        "sourceId": "13",
+                        "destinationId": "14",
+                        "description": "Reads from and writes to"
+                    }
+                ],
+                "location": "Unspecified",
+                "documentation": {}
+            },
+            {
+                "id": "2",
+                "tags": "Element,Software System,Sales",
+                "properties": {
+                    "structurizr.dsl.identifier": "system"
+                },
+                "name": "Sales System",
+                "description": "Internat sales system to create orders",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "3",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "webapp"
+                        },
+                        "name": "Description",
+                        "documentation": {}
+                    },
+                    {
+                        "id": "6",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "backend"
+                        },
+                        "name": "Back end",
+                        "description": "Internal view of the server application",
+                        "components": [
+                            {
+                                "id": "8",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "structurizr.dsl.identifier": "routehandler"
+                                },
+                                "name": "Routes Handler",
+                                "description": "Creates all the REST routes to have a CRUD operations",
+                                "relationships": [
+                                    {
+                                        "id": "10",
+                                        "tags": "Relationship",
+                                        "properties": {
+                                            "structurizr.dsl.identifier": "3ecfaa42-e093-4b17-925c-e3b5b68cc739"
+                                        },
+                                        "sourceId": "8",
+                                        "destinationId": "9",
+                                        "description": "Invokes the operations"
+                                    }
+                                ],
+                                "documentation": {}
+                            },
+                            {
+                                "id": "9",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "structurizr.dsl.identifier": "purchasecontroller"
+                                },
+                                "name": "Sales Controller",
+                                "description": "handles all the necessary business logic to be able to create a sale",
+                                "relationships": [
+                                    {
+                                        "id": "11",
+                                        "tags": "Relationship",
+                                        "properties": {
+                                            "structurizr.dsl.identifier": "58982535-ec20-40e8-9515-c1f8b5f8c765"
+                                        },
+                                        "sourceId": "9",
+                                        "destinationId": "7",
+                                        "description": "Uses the database connection to create orders"
+                                    }
+                                ],
+                                "documentation": {}
+                            },
+                            {
+                                "id": "7",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "structurizr.dsl.identifier": "databaseconnector"
+                                },
+                                "name": "Database Connector",
+                                "description": "Administer the connection to the database and executios queries",
+                                "documentation": {}
+                            }
+                        ],
+                        "documentation": {}
+                    }
+                ],
+                "documentation": {}
+            }
+        ]
+    },
+    "documentation": {},
+    "views": {
+        "systemContextViews": [
+            {
+                "key": "SalesContext",
+                "order": 1,
+                "description": "General view of how the sale system interacts with external actors",
+                "softwareSystemId": "2",
+                "paperSize": "A5_Landscape",
+                "dimensions": {
+                    "width": 2480,
+                    "height": 1748
+                },
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "1",
+                        "x": 320,
+                        "y": 150
+                    },
+                    {
+                        "id": "2",
+                        "x": 1015,
+                        "y": 724
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "5",
+                        "vertices": [
+                            {
+                                "x": 923,
+                                "y": 654
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "containerViews": [
+            {
+                "key": "container",
+                "order": 2,
+                "softwareSystemId": "2",
+                "paperSize": "A5_Landscape",
+                "dimensions": {
+                    "width": 2480,
+                    "height": 1748
+                },
+                "externalSoftwareSystemBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "12",
+                        "x": 105,
+                        "y": 135
+                    },
+                    {
+                        "id": "13",
+                        "x": 775,
+                        "y": 580
+                    },
+                    {
+                        "id": "14",
+                        "x": 1525,
+                        "y": 945
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "16"
+                    },
+                    {
+                        "id": "15"
+                    }
+                ]
+            }
+        ],
+        "componentViews": [
+            {
+                "key": "Backend",
+                "order": 3,
+                "paperSize": "A5_Landscape",
+                "dimensions": {
+                    "width": 2480,
+                    "height": 1748
+                },
+                "containerId": "6",
+                "externalContainerBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "7",
+                        "x": 1665,
+                        "y": 165
+                    },
+                    {
+                        "id": "8",
+                        "x": 205,
+                        "y": 1110
+                    },
+                    {
+                        "id": "9",
+                        "x": 910,
+                        "y": 705
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "10"
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "color": "#ffffff",
+                        "fontSize": 22,
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "Customer",
+                        "background": "#08427b"
+                    },
+                    {
+                        "tag": "Software System",
+                        "background": "#1168bd",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "tag": "Existing System",
+                        "background": "#999999",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "tag": "Container",
+                        "background": "#438dd5",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "tag": "Web Browser",
+                        "shape": "WebBrowser"
+                    },
+                    {
+                        "tag": "Mobile App",
+                        "shape": "MobileDeviceLandscape"
+                    },
+                    {
+                        "tag": "Database",
+                        "shape": "Cylinder"
+                    },
+                    {
+                        "tag": "Component",
+                        "background": "#85bbf0",
+                        "color": "#000000"
+                    },
+                    {
+                        "tag": "Failover",
+                        "opacity": 25
+                    }
+                ]
+            },
+            "terminology": {},
+            "metadataSymbols": "SquareBrackets",
+            "lastSavedView": "container"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@startgantt
+projectscale weekly
+
+
+Project starts the 1st of january 2024
+
+-- DevOps --
+
+[API Setup] on {DevOps} requires 4 weeks
+[MicroServices] on {DevOps} requires 4 weeks
+[Mobile release] on {DevOps} requires 2 weeks
+[Web release] on {DevOps} requires 2 weeks
+ 
+[API Setup] -> [MicroServices]
+[MicroServices] -> [Mobile release]
+[Mobile release] -> [Web release]
+
+-- Software Engineer --
+
+[API] on {Software Engineer} requires 6 weeks
+[Logger] on {Software Engineer} requires 3 weeks
+[Dashboard] on {Software Engineer} requires 3 weeks
+
+[API] -> [Logger]
+[Logger] -> [Dashboard]
+
+-- Backend Developer 1 --
+
+[Orders] on {Backend developer1} requires 6 weeks
+[Stock] on {Backend developer1} requires 6 weeks
+
+[Orders] -> [Stock]
+
+-- Backend Developer 2 --
+
+[IoT] on {Backend developer2} requires 6 weeks
+[Routes] on {Backend developer2} requires 6 weeks
+
+[IoT] -> [Routes]
+
+-- Web -- 
+[Order web] on {Web developer} requires 4 weeks
+[Order web support] on {Web developer} requires 2 weeks
+[Administration web] on {Web developer} requires 4 weeks
+[Administration web support] on {Web developer} requires 2 weeks
+
+[Order web] -> [Order web support]
+[Order web support] -> [Administration web]
+[Administration web] -> [Administration web support]
+
+-- Web 2 --
+
+[Routes web] on {Web2 developer} requires 4 weeks
+[Routes web support] on {Web2 developer} requires 2 weeks
+[IoT web] on {Web2 developer} requires 4 weeks
+[IoT web support] on {Web2 developer} requires 2 weeks
+
+[Routes web] -> [Routes web support]
+[Routes web support] -> [IoT web]
+[IoT web] -> [IoT web support]
+
+-- Mobile --
+[Routes module] on {Mobile developer} requires 4 weeks
+[Routes support] on {Mobile developer} requires 2 weeks
+[IoT module] on {Mobile developer} requires 4 weeks
+[IoT support] on {Mobile developer} requires 2 weeks
+
+[Routes module] -> [Routes support]
+[Routes support] -> [IoT module]
+[IoT module] -> [IoT support]
+
+-- Mobile 2 --
+
+[Order mobile2] on {Mobile2 developer} requires 4 weeks
+[Order mobile2 support] on {Mobile2 developer} requires 2 weeks
+[Administration mobile2] on {Mobile2 developer} requires 4 weeks
+[Administration mobile2 support] on {Mobile2 developer} requires 2 weeks
+
+[Order mobile2] -> [Order mobile2 support]
+[Order mobile2 support] -> [Administration mobile2]
+[Administration mobile2] -> [Administration mobile2 support]
+
+
+@endgantt
